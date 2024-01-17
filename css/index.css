@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100dvh;
     background: rgb(203,152,237);
     background: radial-gradient(circle, rgba(203,152,237,1) -20%, rgba(29, 43, 100, 1)100%);
     border-image: fill 0 linear-gradient( rgba(60, 33, 183, 0.02) 60% ,#042440 120%);
