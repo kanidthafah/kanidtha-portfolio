@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #591da9;
+    --second-color: #cb98ed;
+    --third-color: #654ea3;
+    --forth-color: #042440;
+    --fifth-color: #fff;
+    --font-color: #F0EAFC;
+    --font-color2: #EEDDF3;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+#contact {
+    width: 100%;
+    height: 100dvh;
+    background: rgb(203,152,237);
+    background: radial-gradient(at center top, rgba(203,152,237,1) -20%, rgba(29, 43, 100, 1)100%);
+    border-image: fill 0 linear-gradient( rgba(60, 33, 183, 0.02) 50% ,#042440 100%);
+    display: flex;
+    justify-content: center;
+    padding: 6rem 6rem ;
+}
+
+#contact
+.container-contact {
+    width: 80%;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0.4rem) saturate(140%);
+    -webkit-backdrop-filter: blur(0.4rem) saturate(140%);
+    border: 0.05rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.4rem;
+    animation: aniContact 1.2s ease-in-out 1;
+}
+    @keyframes aniContact {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+.container-contact
+.contact-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+}
+
+.contact-content
+.contact-header {
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+    color: var(--font-color);
+    text-transform: uppercase;
+}
+
+.contact-content
+.contact-content-details {
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color2);
+    row-gap: 0.4rem;
+}
+
+.contact-content-details
+:is(.myAddress, .myPhone, .myEmail, .myGithub) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+}
+
+.contact-content-details
+:is(.myAddress, .myPhone, .myEmail, .myGithub) > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+}
+
+.contact-content-details
+:is(.myAddress, .myPhone, .myEmail, .myGithub) h5{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--font-color2);
+    font-style: italic;
+}
+
+.contact-content-details
+.myGithub a {
+    font-size: 0.9rem;
+    font-style: italic;
+    text-decoration: none;
+    transition: color .2s ease-in;
+}
+
+.myGithub a:hover {
+    color: var(--primary-color);
+}
+
+.myGithub a:active {
+    color: var(--primary-color);
+}
+
+.container-contact form {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    background: rgba(203,152,237,0.7);
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    color: var(--font-color2);
+}
+
+form .contact-header-sm {
+    display: none;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--font-color);
+}
+
+form > div label {
+    font-size: 1rem;
+}
+
+form > div input {
+    width: 100%;
+    height: 2rem;
+    padding-left: 0.4rem;
+    font-size: 0.9rem;
+    border: 0.1rem solid var(--third-color);
+    border-radius: 0.3rem;
+    background: transparent;
+    color: var(--font-color2);
+}
+
+form > div input:focus {
+    outline: none;  
+}
+
+form > div input::placeholder {
+    color: var(--third-color); 
+}
+
+form > div input[type="submit"] {
+    width: 100%;
+    height: 2.2rem;
+    font-size: 0.9rem;
+    color: var(--font-color2);
+    background-color: var(--third-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+form > div input[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+
+
+form > div textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    border: 0.1rem solid var(--third-color);
+    border-radius: 0.3rem;
+    background: transparent;
+    color: var(--font-color2);
+    resize: none;
+}
+
+form > div textarea:focus {
+    outline: none;  
+}
+
+form > div textarea::placeholder {
+    color: var(--third-color); 
+}
+
+form > div .thankyouText {
+    display: none;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--font-color2);
+}
+
+form .contact-sm {
+    display: none;
+    flex-direction: column;
+    row-gap: 0.1rem;
+    margin-top: 0.8rem;
+}
+
+.contact-sm
+:is(.myAddress-sm, .myPhone-sm, .myEmail-sm, .myGithub-sm){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+:is(.myAddress-sm, .myPhone-sm, .myEmail-sm, .myGithub-sm) i{
+    font-size: 1.8rem;
+    color: var(--second-color);
+}
+
+:is(.myAddress-sm, .myPhone-sm, .myEmail-sm, .myGithub-sm) h4, a{
+    font-size: 0.55rem;
+    font-weight: 400;
+    color: var(--font-color2);
+    font-style: normal;
+}
+
+/* X-Small devices portrait phones, less than 576px */
+@media (max-width: 576px) {
+
+    #contact {
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    #contact
+    .container-contact {
+        width: 100%;
+        height: 35rem;
+        grid-template-columns: 100%;
+    }
+
+    .container-contact
+    .contact-content {
+        display: none;
+    }
+
+    .container-contact
+    form {
+        background: transparent;
+        padding: 1rem;
+        row-gap: 0.1rem;
+    }
+
+    form .contact-header-sm {
+        display: block;
+    }
+    
+    form > div label {
+        font-size: 0.7rem;
+    }
+    
+    form > div input {
+        font-size: 0.55rem;
+        height: 1.8rem;
+        border: 0.04rem solid rgba(238, 221, 243, 0.8);
+    }
+
+    form > div input::placeholder {
+        color: var(--second-color); 
+    }
+
+    form > div textarea {
+        height: 8rem;
+        font-size: 0.55rem;
+        border: 0.04rem solid rgba(238, 221, 243, 0.8);
+    }
+
+    form > div textarea::placeholder {
+        color: var(--second-color); 
+    }
+
+    form > div input[type="submit"]{
+        font-size: 0.55rem;
+        border: none;
+    }
+
+    form > div .thankyouText {
+        font-size: 0.7rem;
+    }
+
+    form .contact-sm {
+        display: flex;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    #contact {
+        padding: 6rem 2rem;
+    }
+
+    #contact
+    .container-contact {
+        width: 100%;
+        height: 30rem;
+        grid-template-columns: 42% 58%;
+    }
+
+    .container-contact
+    .contact-content {
+        padding: 1.4rem;
+    }
+
+    .contact-content
+    .contact-header {
+        font-size: 1.4rem;
+    }
+
+    .contact-content-details
+    :is(.myAddress, .myPhone, .myEmail, .myGithub) > div {
+        font-size: 0.8rem;
+    }
+
+    .contact-content-details
+    :is(.myAddress, .myPhone, .myEmail, .myGithub) h5 {
+        font-size: 0.6rem;
+    }
+
+    .contact-content-details
+    .myGithub a {
+        font-size: 0.6rem;
+    }
+
+    .container-contact
+    form {
+        padding: 1.4rem;
+    }
+
+    form > div label {
+        font-size: 0.8rem;
+    }
+    
+    form > div input {
+        font-size: 0.6rem;
+    }
+
+    form > div textarea {
+        font-size: 0.6rem;
+    }
+
+    form > div input[type="submit"]{
+        font-size: 0.6rem;
+    }
+
+    form > div .thankyouText {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 769px) and (max-width: 992px) { 
+
+    #contact {
+        padding: 6rem 2rem;
+    }
+
+    #contact
+    .container-contact {
+        width: 95%;
+        height: 32rem;
+    }
+
+    .contact-content
+    .contact-header {
+        font-size: 1.6rem;
+    }
+
+    .contact-content-details
+    :is(.myAddress, .myPhone, .myEmail, .myGithub) > div {
+        font-size: 0.9rem;
+    }
+
+    .contact-content-details
+    :is(.myAddress, .myPhone, .myEmail, .myGithub) h5 {
+        font-size: 0.7rem;
+    }
+
+    .contact-content-details
+    .myGithub a {
+        font-size: 0.7rem;
+    }
+
+    form > div label {
+        font-size: 0.9rem;
+    }
+    
+    form > div input {
+        font-size: 0.7rem;
+    }
+
+    form > div textarea {
+        font-size: 0.7rem;
+    }
+
+    form > div input[type="submit"]{
+        font-size: 0.7rem;
+    }
+
+    form > div .thankyouText {
+        font-size: 0.7rem;
+    }
+    
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    #contact {
+        padding: 6rem 4rem ;
+    }
+
+    #contact
+    .container-contact {
+        width: 85%;
+        height: 32rem;
+    }
+
+}
+

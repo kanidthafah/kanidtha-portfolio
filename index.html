@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanidtha Portfolio</title>
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" type="image/png" href="assets/image/circle-icon.png">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome!</h1>
+        <div class="img-box">
+                <img src="assets/image/profile.jpg" alt="photo of Kanidtha" class="profile-img">
+                <img src="assets/image/half-img.png" alt="photo of Kanidtha" class="half-drawing-img">
+                <img src="assets/image/full-img.png" alt="photo of Kanidtha" class="full-drawing-img">    
+        </div>
+        <button onclick="visitPortfolio()">View my portfolio</button>
+    </div>
+    
+    <div>
+        <div class="loader"></div>
+    </div>
+    
+    <script>
+        function visitPortfolio(){
+            // Show loader and hide container
+            document.querySelector('.loader').style.display = 'block';
+            document.querySelector('.container').style.display = 'none';
+            
+            setTimeout(function(){
+                window.location = '/pages/main.html';
+            }, 1800);
+        }
+    </script>
+    
+</body>
+</html>

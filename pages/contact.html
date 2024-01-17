@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="icon" type="image/png" href="/assets/image/circle-icon.png">
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <nav id="navbar" class="navbar navbarBg">
+        <div class="logo">
+            <img src="/assets/image/circle-icon.png" alt="logo">
+            <h2 class="logo-name">Kanidtha</h2>
+        </div>
+    
+        <div class="menu">
+            <a href="main.html#home" class="menu-nav">Home</a>
+
+            <a href="main.html#about" class="menu-nav">About</a>
+
+            <a href="main.html#skills" class="menu-nav">Skills</a>
+
+            <a href="main.html#projects" class="menu-nav">Projects</a>
+
+            <a href="contact.html" class="menu-nav">Contact</a>
+        </div>
+
+        <div class="openSidebar" onclick=showSidebar()>
+                <i class='bx bx-menu'></i>
+        </div>               
+    </nav>
+     
+    <main>
+        <!-- menu navbar for small device -->
+        <div class="sidebar">
+            <div class="sidebarScroll">
+                <div class="closeSidebar" onclick=hideSidebar()>
+                    <i class='bx bx-x' ></i>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="main.html#home" class="menu-nav">Home</a>
+                    </li>
+                    <li>
+                        <a href="main.html#about" class="menu-nav">About</a>
+                    </li>
+                    <li>
+                        <a href="main.html#skills" class="menu-nav">Skills</a>
+                    </li>
+                    <li>
+                        <a href="main.html#projects" class="menu-nav">Projects</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="menu-nav">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+
+        <section id="contact"> 
+            <div class="container-contact">
+                <div class="contact-content">
+                    <h1 class="contact-header">Contact Me</h1>
+
+                    <div class="contact-content-details">
+                        <div class="myAddress">     
+                            <div>
+                                <i class='bx bxs-map'></i>
+                                <h4>Current address</h4>
+                            </div>   
+                            <h5>132/8 Chang Puek, Chiang Mai 50300</h5>
+                        </div>
+
+                        <div class="myPhone">
+                            <div>
+                                <i class='bx bxs-phone' ></i>
+                                <h4>Phone</h4>
+                            </div>  
+                            <h5>+6690-399-8394</h5>
+                        </div>
+
+                        <div class="myEmail">
+                            <div>
+                                <i class='bx bxs-envelope' ></i>
+                                <h4>Email</h4>
+                            </div>
+                            <h5>kanidtha.khamngam@gmail.com</h5>
+                        </div>
+
+                        <div class="myGithub">
+                            <div>
+                                <i class='bx bxl-github' ></i>
+                                <h4>Github</h4>
+                            </div>
+                            <a href="https://github.com/kanidthafah">https://github.com/kanidthafah</a> 
+                        </div>
+                    </div>
+
+                </div>
+                
+                <form action="mailto:kanidtha.khamngam@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+                    <h1 class="contact-header-sm">Contact Me</h1>
+                    <div>
+                        <label for="fullname">Full name:</label>
+                        <br>
+                        <input type="text" name="fullname" id="fullname" placeholder="Name*" required />
+                    </div>
+
+                    <div>
+                        <label for="company">Company:</label>
+                        <br>
+                        <input type="text" name="company" id="company" placeholder="Company"/>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="text" name="email" id="email" placeholder="Email*" required/>
+                    </div>
+
+                    <div>
+                        <label for="message">Message/Suggestions:</label>
+                        <br>
+                        <textarea name="message" id="message" placeholder="Write your message or suggestions*" required></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Send Message" id="btnSubmit">
+                        <div class="thankyouText">
+                            <p>Thank you for reaching out to me</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-sm">
+                        <div class="myAddress-sm">
+                            <i class='bx bxs-map'></i>
+                            <h4>132/8 Chang Puek, Chiang Mai 50300</h4>
+                        </div>
+                        <div class="myPhone-sm">
+                            <i class='bx bxs-phone' ></i>
+                            <h4>+6690-399-8394</h4>
+                        </div>
+                        <div class="myEmail-sm">
+                            <i class='bx bxs-envelope' ></i>
+                            <h4>kanidtha.khamngam@gmail.com</h4>
+                        </div>
+                        <div class="myGithub-sm">
+                            <i class='bx bxl-github' ></i>
+                            <a href="https://github.com/kanidthafah">https://github.com/kanidthafah</a> 
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <p>&copy; Copyright 2024 by Kanidtha</p>
+            <a href="https://github.com/kanidthafah">
+                <i class='bx bxl-github' ></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+</html>

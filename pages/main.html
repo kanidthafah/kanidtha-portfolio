@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanidtha Portfolio</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/png" href="/assets/image/circle-icon.png">
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbarBg">
+
+        <div class="logo">
+            <img src="/assets/image//circle-icon.png" alt="logo">
+            <h2 class="logo-name">Kanidtha</h2>
+        </div>
+    
+        <div class="menu">
+            <a href="#home" class="menu-nav">Home</a>
+
+            <a href="#about" class="menu-nav">About</a>
+
+            <a href="#skills" class="menu-nav">Skills</a>
+
+            <a href="#projects" class="menu-nav">Projects</a>
+
+            <a href="contact.html" class="menu-nav">Contact</a>
+        </div>
+
+        <div class="openSidebar" onclick=showSidebar()>
+                <i class='bx bx-menu'></i>
+        </div>               
+
+    </nav>
+     
+    <main>
+
+        <!-- menu navbar for small device -->
+        <div class="sidebar">
+
+            <div class="sidebarScroll">
+
+                <div class="closeSidebar" onclick=hideSidebar()>
+                    <i class='bx bx-x' ></i>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#home" class="menu-nav">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="menu-nav">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="menu-nav">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="menu-nav">Projects</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="menu-nav">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Section Home -->
+        <section id="home">
+
+            <div class="container-home">
+
+                <div class="title">
+                    <h3 class="greeting">Hello, I'm</h3>
+                    <h2 class="title-name"><Span class="name">Kanidtha</Span> Khamngam</h2>
+                    <h3 class="type-writer">Front-end Developer</h3>
+                    <button class="btn-contact" onclick="location.href='contact.html'">Contact Me</button>
+                </div>
+
+                <div class="img-banner">
+                    <img src="/assets/image/profile.jpg" alt="photo of Kanidtha" class="profile-img">
+                    <img src="/assets/image/half-img.png" alt="photo of Kanidtha" class="half-drawing-img">
+                    <img src="/assets/image/full-img.png" alt="photo of Kanidtha" class="full-drawing-img">    
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section About -->
+        <section id="about">
+
+            <div class="container-about">
+
+                <div class="img-about reveal slide-left">
+                    <img src="/assets/image/about-img.png" alt="photo of me">
+                </div>
+
+                <div class="info-about reveal slide-right">
+
+                    <h1>About Me</h1>
+                    <p>I am a recent graduate from Chiang Mai University, College of Art, Media and Technology with a Bachelor of Science in Modern Management and Information Technology.</p>
+                    <p>My passion lies in Front-end Development. Though I am new to the professional field, I have dedicated myself to learning and practicing front-end development by undertaking various projects.</p>
+                    <p>I am enthusiastic, adaptable, and eager to apply my knowledge, my skills and creativity to contribute effectively to your organization.</p>
+
+                    <table>
+                        <tr>
+                            <th>Full Name:</th>
+                            <td>Kanidtha Khamngam</td>
+                        </tr>
+                        <tr>
+                            <th>Date of Birth:</th>
+                            <td>January 14, 2000</td>
+                        </tr>
+                        <tr>
+                            <th>Age:</th>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <th>Nationality:</th>
+                            <td>Thai</td>
+                        </tr>
+                        <tr>
+                            <th>Current Address:</th>
+                            <td>132/8 Chang Puek, Chiang Mai 50300</td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td>kanidtha.khamngam@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>+6690-399-8394</td>
+                        </tr>
+                    </table>
+
+                    <button class="btn-download" type="submit" onclick="window.open('/assets/file/')">Download Resume</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section Education -->
+        <section id="edu">
+
+            <div class="container-edu reveal">
+                <div class="box-edu reveal slide-left">
+
+                    <h1 class="edu-header">Education</h1>
+                    <div class="edu-university">
+                        <h4>Bachelor of Science</h4>
+                        <h4>Modern Management and Information Technology</h4>
+                        <h5>Chiang Mai University</h5>
+                        <h6><em>2019-2022</em></h6>
+                    </div>
+
+                    <div class="edu-school">
+                        <h4>Enrichment Program of Science Mathematics Technology and Environment : SMTE</h4>
+                        <h5>Fanchanupathum School</h5>
+                        <h6><em>2016-2018</em></h6>
+                    </div>
+
+                </div>
+
+                <div class="edu-box-icon reveal slide-right">
+                    <div class="edu-icon">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section Work Experience -->
+        <section id="work">
+
+            <div class="container-work reveal">
+
+                <div class="work-box-icon reveal slide-left">
+                    <div class="work-icon">
+                        <i class='bx bxs-briefcase' ></i>
+                    </div>
+                </div>
+
+                <div class="box-work reveal slide-right">
+                    <h1 class="work-header">Work Experience</h1>
+
+                    <div>
+                        <h4>Online Marketing </h4>
+                        <h5>CMU Caricious (Co-operative Education)</h5>
+                        <h6><em>May 2022 - March 2023</em>
+
+                        <ul>
+                            <li>Planning the goals and objectives of a business using Business Model Canvas.</li>
+                            <li>Planning marketing strategy for sales increasing.</li>
+                            <li>Take photos and videos of products, edit images  and post them on Social Platform.</li>
+                            <li>Created content and promotions.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section Skills -->
+        <section id="skills">
+
+            <div class="container-skills reveal">
+
+                <h1>My Skills</h1>
+
+                <ul class="ul-skills">
+                    <!-- icon from: https://icons8.com/-->
+                    <li class="reveal scale-in">
+                        <img width="36" height="36" src="https://img.icons8.com/nolan/36/html-5.png" alt="html-5"/>
+                        <p>HTML5</p>
+                    </li>
+                    <li class="reveal scale-in">
+                        <img width="36" height="36" src="https://img.icons8.com/nolan/36/css3.png" alt="css3"/>
+                        <p>CSS3</p>
+                    </li>
+                    <li class="reveal scale-in">
+                        <img width="36" height="36" src="https://img.icons8.com/nolan/36/javascript.png" alt="javascript"/>
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="reveal scale-in">
+                        <img width="36" height="36" src="https://img.icons8.com/nolan/36/bootstrap.png" alt="bootstrap"/>
+                        <p>Bootstrap</p>
+                    </li>
+                    <li class="reveal scale-in">
+                        <img width="36" height="36" src="https://img.icons8.com/nolan/36/tailwind_css.png" alt="tailwind_css"/>
+                        <p>Tailwind</p>
+                    </li>
+                    <li class="reveal scale-in">
+                        <img width="36" height="36" src="https://img.icons8.com/nolan/36/react-native.png" alt="react"/>
+                        <p>React</p>
+                    </li>
+                    <li class="reveal scale-in">
+                        <img width="36" height="36" src="https://img.icons8.com/nolan/36/node-js.png" alt="node-js"/>
+                        <p>Node</p>
+                    </li>
+                    <li class="reveal scale-in">
+                        <img width="36" height="36" src="https://img.icons8.com/nolan/36/express-js.png" alt="express-js"/>
+                        <p>Express</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Section Projects -->
+        <section id="projects">
+
+            <div class="container-projects reveal">
+                <h1>My Projects</h1>
+
+                <div class="grid-projects">
+
+                    <div class="project">
+
+                        <div class="card reveal slide-left">
+                            <div class="card-img">
+                                <img src="/assets/image/image-web/Tourist-Attractions.png" alt="Tourist Attractions Web">
+                            </div>
+                        </div>
+
+                        <div class="project-content reveal slide-right">
+                            <div class="project-content-details">
+                                <h3>Tourist Attractions Website</h3>
+
+                                <ul class="stack-using">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+
+                                <ul class="description">
+                                    <li>This project is a responsive website  showcasing recommended tourist attractions across five regions of Thailand using HTML, CSS and Bootstrap.</li>
+                                </ul>
+                                
+                            </div>
+                            
+                            <div class="btn-project">
+                                <a class="view-page" href="https://kanidthafah.github.io/tourist-attractions-blog/">
+                                    <i class='bx bx-world'></i>&nbsp;View Page 
+                                </a>
+
+                                <a class="github" href="https://github.com/kanidthafah/tourist-attractions-blog.git">
+                                    <i class='bx bxl-github' ></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="project">
+
+                        <div class="card reveal slide-left">
+                            <div class="card-img">
+                                <img src="/assets/image/image-web/Tic-Tac-Toe.png" alt="Tic-Tac-Toe Game">
+                            </div>
+                        </div>
+
+                        <div class="project-content reveal slide-right">
+                            <div class="project-content-details">
+                                <h3>Tic Tac Toe Game</h3>
+
+                                <ul class="stack-using">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+
+                                <ul class="description">
+                                    <li>This project is a classic Tic Tac Toe game presented as a web application. The game features an intuitive interface displaying the game board, tracking player turns, detecting winning conditions and draws.</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="btn-project">
+                                <a class="view-page" href="https://kanidthafah.github.io/TicTacToe-game/">
+                                    <i class='bx bx-world'></i>&nbsp;View Page 
+                                </a>
+
+                                <a class="github" href="https://github.com/kanidthafah/TicTacToe-game.git">
+                                    <i class='bx bxl-github' ></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="project">
+
+                        <div class="card reveal slide-left">
+                            <div class="card-img">
+                                <img src="/assets/image/image-web/Weather-App.png" alt="Weather-App Web">
+                            </div>
+                        </div>
+
+                        <div class="project-content reveal slide-right">
+                            <div class="project-content-details">
+                                <h3>Weather Web App</h3>
+
+                                <ul class="stack-using">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+
+                                <ul class="description">
+                                    <li>Developed a Weather Web Application utilizing HTML, CSS, and JavaScript to display real-time weather information.</li>
+                                    <li>Integrated OpenWeatherMap API to fetch weather data based on user-input city queries.</li>
+                                    <li>Handled API responses effectively, displaying error messages for invalid queries or unavailable data.</li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-project">
+                                <a class="view-page" href="https://kanidthafah.github.io/weather-app/">
+                                    <i class='bx bx-world'></i>&nbsp;View Page 
+                                </a>
+
+                                <a class="github" href="https://github.com/kanidthafah/weather-app.git">
+                                    <i class='bx bxl-github' ></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="project">
+
+                        <div class="card reveal slide-left">
+                            <div class="card-img">
+                                <img src="/assets/image/image-web/Shopping-Web.png" alt="Shopping Website">
+                            </div>
+                        </div>
+ 
+                        <div class="project-content reveal slide-right">
+                            <div class="project-content-details">
+                                <h3>Shopping Website</h3>
+
+                                <ul class="stack-using">
+                                    <li>React</li>
+                                    <li>Tailwind</li>
+                                </ul>
+
+                                <ul class="description">
+                                    <li>This project using Vite.js to create a React app and utilized Tailwind for styling. </li>
+                                    <li>The website features a responsive design, ensuring optimal user experience across various devices and screen sizes.</li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-project">
+                                <a class="view-page" href="">
+                                    <i class='bx bx-world'></i>&nbsp;View Page 
+                                </a>
+
+                                <a class="github" href="https://github.com/kanidthafah/shopping-react-app.git">
+                                    <i class='bx bxl-github' ></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="project">
+
+                        <div class="card reveal slide-left">
+                            <div class="card-img">
+                                <img src="/assets/image/image-web/Portfolio.png" alt="Portfolio Website">
+                            </div>
+                        </div>
+
+                        <div class="project-content reveal slide-right">
+                            <div class="project-content-details">
+                                <h3>Portfolio Website</h3>
+
+                                <ul class="stack-using">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+
+                                <ul class="description">
+                                    <li>This project using Vite.js to create a React app and utilized Tailwind for styling. </li>
+                                    <li>The website features a responsive design, ensuring optimal user experience across various devices and screen sizes.</li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-project">
+                                <a class="view-page" href="">
+                                    <i class='bx bx-world'></i>&nbsp;View Page 
+                                </a>
+
+                                <a class="github" href="">
+                                    <i class='bx bxl-github' ></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+    </main>
+
+    <!--Footer  -->
+    <footer>
+        <div class="container-footer">
+            <p>&copy; Copyright 2024 by Kanidtha</p>
+            <a href="https://github.com/kanidthafah">
+                <i class='bx bxl-github' ></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>
