@@ -97,6 +97,7 @@
     font-weight: 700;
     margin-left: 0.2rem;
     font-style: italic;
+    font-size: 1.1rem;
 }
 
 .navbar 
@@ -110,7 +111,7 @@
 .menu-nav {
     padding-inline: 0.6rem;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
@@ -1061,7 +1062,7 @@ footer .container-footer {
 
     /* Navbar */
     .navbar{
-        padding-inline: 1rem;
+        padding: 0.4rem 1rem;
     }
 
     .navbar .logo .logo-name {
@@ -1304,7 +1305,7 @@ footer .container-footer {
 
     /* Navbar */
     .navbar{
-        padding-inline: 0.8rem;
+        padding: 0.4rem 0.8rem;
     }
 
     .navbar .menu {
@@ -1598,6 +1599,7 @@ footer .container-footer {
 
     .container-projects
     .grid-projects {
+        height: 88rem;
         padding: 1rem 2rem;
     }
 
