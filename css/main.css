@@ -200,6 +200,7 @@ main {
 .sidebar ul li a {
     color: var(--fifth-color);
     text-decoration: none;
+    font-size: 1rem;
 }
 
 /* Section Home */
@@ -1073,6 +1074,12 @@ footer .container-footer {
 
     .openSidebar {
         display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 100%;
+        margin-left: 0;
     }
 
     :is(#about, #edu, #work, #skills, #projects, footer) {

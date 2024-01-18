@@ -221,7 +221,7 @@ form .contact-sm {
 }
 
 :is(.myAddress-sm, .myPhone-sm, .myEmail-sm, .myGithub-sm) i{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--second-color);
 }
 
