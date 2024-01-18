@@ -60,12 +60,12 @@
 /* Navbar */
 .navbar {
     width: 100%;
-    height: 6.5vh;
+    height: 5vh;
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 6rem;
+    padding: 0.2rem 6rem;
     background: transparent;
     filter: drop-shadow(0 0.2rem 0.5rem rgba(45, 50, 80, 0.6));
     color: var(--fifth-color);
@@ -1061,7 +1061,7 @@ footer .container-footer {
 
     /* Navbar */
     .navbar{
-        padding-inline: 0.6rem;
+        padding-inline: 1rem;
     }
 
     .navbar .logo .logo-name {
@@ -1599,6 +1599,11 @@ footer .container-footer {
     .container-projects
     .grid-projects {
         padding: 1rem 2rem;
+    }
+
+    .project-content-details
+    .description li {
+        font-size: 0.6rem;
     }
 
     /* footer */
